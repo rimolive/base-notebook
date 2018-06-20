@@ -38,6 +38,7 @@ RUN yum install -y curl wget java-headless bzip2 gnupg2 sqlite3 \
 			    'dill=0.2*' \
 			    notebook \
 			    jupyter \
+			    boto \
     && pip install widgetsnbextension \
     && yum erase -y gcc gcc-c++ glibc-devel \
     && yum clean all -y \
